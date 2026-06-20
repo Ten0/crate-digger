@@ -1,0 +1,6 @@
+# JitPack's default build image uses an old Maven that fetches Maven Central
+# over plain HTTP, which now returns "501 Not Implemented" and fails the build.
+# Selecting a newer JDK image gives a Maven that uses HTTPS (and matches the
+# JDK this project builds with locally).
+jdk:
+  - openjdk17
